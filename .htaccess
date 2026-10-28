@@ -1,0 +1,61 @@
+# ==============================================================================
+# BLUEHOST PRODUCTION APACHE CONFIGURATION (.htaccess)
+# Designed for Jagdish Caterers - High Performance & Media Streaming
+# ==============================================================================
+
+# 1. CHARACTER ENCODING & DEFAULT DOCUMENT
+AddDefaultCharset UTF-8
+DirectoryIndex index.html
+
+# 2. PROPER MIME TYPES FOR HIGH-DEF VIDEO, AUDIO & WEBP
+<IfModule mod_mime.c>
+  AddType video/mp4 .mp4 .m4v
+  AddType video/webm .webm
+  AddType audio/mpeg .mp3
+  AddType audio/ogg .ogg
+  AddType image/webp .webp
+  AddType image/svg+xml .svg .svgz
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+</IfModule>
+
+# 3. ENABLE HTTP 206 RANGE REQUESTS (Smooth Video / Audio Streaming)
+<IfModule mod_headers.c>
+  # Ensure Byte-Range header is respected for smooth video seek & mobile streaming
+  Header set Accept-Ranges bytes
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# 4. GZIP / DEFLATE COMPRESSION (Lightning Fast Page Loads)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml font/woff2
+</IfModule>
+
+# 5. BROWSER CACHING (Instant Return Visits)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  
+  # HTML Documents (keep fresh)
+  ExpiresByType text/html "access plus 1 hour"
+  
+  # CSS & JavaScript
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  
+  # Media & Fonts
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType audio/mpeg "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# 6. FORCE HTTPS (Optional - Uncomment if your SSL is active on Bluehost)
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>

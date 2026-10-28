@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagdish Caterers | Royal Indian Wedding Catering &amp; Bespoke Culinary Theatres</title>
+  <meta name="description" content="Jagdish Caterers is India's premier luxury wedding catering house orchestrating bespoke royal weddings, grand palace celebrations, and heritage culinary theatres across Rajasthan, Gujarat, Mumbai, Delhi, and all of India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="luxury-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Jagdish Caterers Home">
+        <img src="assets/images/logo-light.png" alt="Jagdish Caterers - Where taste meets elegance" class="brand-logo-img">
+      </a>
+
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#heritage" class="nav-link">The House</a>
+        <a href="#verticals" class="nav-link">Verticals</a>
+        <a href="#theatres" class="nav-link">Theatres</a>
+        <a href="#atelier" class="nav-link">The Atelier</a>
+        <a href="#gallery" class="nav-link">Anthology</a>
+        <a href="#concierge" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/919825627698?text=Hello%20Jagdish%20Caterers%2C%20I%20would%20like%20to%20enquire%20about%20bespoke%20catering%20for%20an%20upcoming%20event." target="_blank" rel="noopener" class="btn-whatsapp" title="Connect on WhatsApp">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.05-1.07l-.29-.17-3.12.82.83-3.04-.19-.3a8.216 8.216 0 0 1-1.25-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+          </svg>
+          <span class="whatsapp-text">VIP Concierge</span>
+        </a>
+        <a href="#concierge" class="btn-primary-outline">Plan Event</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="#hero" class="brand-logo" aria-label="Jagdish Caterers Home">
+        <img src="assets/images/logo-light.png" alt="Jagdish Caterers" class="brand-logo-img drawer-logo-img">
+      </a>
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#hero" class="drawer-link">The Cinematic Hero</a>
+      <a href="#heritage" class="drawer-link">The House &amp; Legacy</a>
+      <a href="#verticals" class="drawer-link">Verticals &amp; Services</a>
+      <a href="#theatres" class="drawer-link">Culinary Theatres</a>
+      <a href="#atelier" class="drawer-link">The 4-Step Atelier</a>
+      <a href="#gallery" class="drawer-link">Visual Anthology</a>
+      <a href="#concierge" class="drawer-link">Book Consultation</a>
+    </div>
+    <div class="drawer-footer">
+      <p class="drawer-tel">+91 98256 27698 / +91 92652 08807</p>
+      <p class="drawer-email">concierge@jagdishcaterers.com</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION: 100% PURE CINEMATIC VIDEO (NO TEXT OVERLAY ON BANNER) -->
+    <section class="hero-section" id="hero">
+      <div class="video-wrapper">
+        <video
+          id="heroVideo"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="assets/images/banner-poster.jpg"
+          src="assets/videos/aerial_drone_cinema.mp4"
+        >
+          <source src="assets/videos/aerial_drone_cinema.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Subtle Video Controls Bar (Discreet Luxury Styling) -->
+      <div class="hero-controls-bar">
+        <!-- Reel Selectors -->
+        <div class="reel-selector">
+          <button class="reel-btn active" data-src="assets/videos/aerial_drone_cinema.mp4" id="reelBtn1">
+            <span class="reel-dot"></span>
+            <span class="reel-label">01 &middot; Aerial Drone Cinema</span>
+          </button>
+          <button class="reel-btn" data-src="assets/videos/grand_banquet.mp4" id="reelBtn2">
+            <span class="reel-dot"></span>
+            <span class="reel-label">02 &middot; Grand Banquets</span>
+          </button>
+          <button class="reel-btn" data-src="assets/videos/luxury_wedding.mp4" id="reelBtn3">
+            <span class="reel-dot"></span>
+            <span class="reel-label">03 &middot; Royal Nuptials</span>
+          </button>
+          <button class="reel-btn" data-src="assets/videos/haute_gastronomy.mp4" id="reelBtn4">
+            <span class="reel-dot"></span>
+            <span class="reel-label">04 &middot; Haute Gastronomy</span>
+          </button>
+        </div>
+
+        <!-- Audio & Play State Toggle -->
+        <div class="playback-controls">
+          <button class="control-btn" id="playPauseBtn" aria-label="Pause or Play video">
+            <svg id="pauseIcon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <rect x="6" y="4" width="4" height="16"/>
+              <rect x="14" y="4" width="4" height="16"/>
+            </svg>
+            <svg id="playIcon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="hidden">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+          </button>
+          <button class="control-btn sound-btn" id="soundBtn" aria-label="Toggle Sound">
+            <span class="sound-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span id="soundLabel">Sound Off</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#heritage" class="hero-scroll-indicator" aria-label="Scroll to explore">
+        <span class="scroll-text">EXPLORE</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- SECTION 1: THE HOUSE & HERITAGE (EDITORIAL PROLOGUE) -->
+    <section class="section heritage-section" id="heritage">
+      <div class="container">
+        <div class="heritage-grid">
+          <div class="heritage-intro">
+            <span class="section-tag">THE HOUSE OF JAGDISH</span>
+            <h1 class="editorial-heading">
+              Masters of Royal Indian Gastronomy for Palace Nuptials &amp; Grand Conclaves.
+            </h1>
+            <p class="body-lead">
+              For more than three decades, Jagdish Caterers has stood as India&rsquo;s foremost authority in regal hospitality. Rooted in authentic culinary traditions and royal court recipes, we curate extraordinary palace weddings, multi-day destination celebrations, and grand industrialist banquets across India.
+            </p>
+            <p class="body-text">
+              From the magnificent lake palaces of Udaipur to the royal courtyards of Jaipur and Jodhpur, the historic estates of Gujarat, and the iconic grand ballrooms of Mumbai and Delhi NCR, we choreograph every feast as an unforgettable royal celebration. Our master bawarchis, regional culinary artisans, and white-glove banquet captains orchestrate authentic flavors, theatrical live tandoors, and warm Indian hospitality into a flawless symphony.
+            </p>
+            <div class="heritage-signature">
+              <div class="sig-title">The Jagdish Family Legacy</div>
+              <div class="sig-note">Parampara &middot; Shuddhata &middot; Royal Craftsmanship &middot; Precision</div>
+            </div>
+          </div>
+
+          <div class="heritage-visual">
+            <div class="stats-panel">
+              <div class="stat-card">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Years of Royal Heritage</span>
+                <p class="stat-desc">Serving India&rsquo;s distinguished families with enduring trust.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">1,500+</span>
+                <span class="stat-label">Landmark Indian Weddings</span>
+                <p class="stat-desc">From multi-day palace nuptials to premier corporate banquets.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Cities Across India</span>
+                <p class="stat-desc">Pan-India mobile kitchens and specialized cold-chain logistics.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Pure Sourcing &amp; Certification</span>
+                <p class="stat-desc">FSSAI compliant, ISO 22000 certified commissary kitchens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: BUSINESS VERTICALS -->
+    <section class="section verticals-section" id="verticals">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="section-tag">DIVISIONS &amp; CAPABILITIES</span>
+          <h2 class="section-title">The Curated Verticals</h2>
+          <p class="section-description">
+            Four specialized divisions engineered to deliver unparalleled gastronomic excellence, flawless event choreography, and dedicated guest management across India.
+          </p>
+        </div>
+
+        <div class="verticals-grid">
+          <!-- Card 1: Luxe Weddings -->
+          <article class="vertical-card">
+            <div class="vertical-image-box">
+              <img src="assets/images/food/optimized/royal-chaat-tartlet.webp" alt="Jagdish Luxe - Signature Royal Chaat Tartlet Plating" loading="lazy">
+              <div class="card-overlay"></div>
+              <span class="card-badge">01 &middot; BESPOKE NUPTIALS</span>
+            </div>
+            <div class="vertical-content">
+              <h3 class="vertical-title">Jagdish Luxe</h3>
+              <p class="vertical-subtitle">Signature Royal Weddings &amp; Multi-Day Celebrations</p>
+              <p class="vertical-body">
+                Tailored for families seeking royal Indian opulence. We architect bespoke menus for every ritual—from vibrant Sangeet street food bazaars and traditional Mehendi luncheons to the grand Pheras Royal Dastarkhwan and lavish reception banquets.
+              </p>
+              <ul class="vertical-features">
+                <li>Bespoke Kansa, Brass &amp; Silverware Table Styling</li>
+                <li>Live Interactive Regional Food Pavilions</li>
+                <li>Dedicated VIP Family Concierge Service</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2: Indian Palace Destinations -->
+          <article class="vertical-card">
+            <div class="vertical-image-box">
+              <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=80" alt="Jagdish Palaces & Destination Catering India" loading="lazy">
+              <div class="card-overlay"></div>
+              <span class="card-badge">02 &middot; PAN-INDIA DESTINATIONS</span>
+            </div>
+            <div class="vertical-content">
+              <h3 class="vertical-title">Jagdish Palaces</h3>
+              <p class="vertical-subtitle">Destination Weddings Across India&rsquo;s Iconic Capitals</p>
+              <p class="vertical-body">
+                Our seasoned masterchef brigade travels to palace venues across Udaipur, Jaipur, Jodhpur, Jaisalmer, Goa, Mussoorie, and Kerala, mobilizing state-of-the-art kitchens and cold-chains to deliver authentic heritage feasts anywhere in India.
+              </p>
+              <ul class="vertical-features">
+                <li>Turnkey Pan-India Logistics &amp; Sourcing</li>
+                <li>All-Day Hospitality Lounges &amp; Midnight Bazaars</li>
+                <li>Authentic Regional Chefs &amp; Traditional Bawarchis</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3: Privé & State Galas -->
+          <article class="vertical-card">
+            <div class="vertical-image-box">
+              <img src="assets/images/food/optimized/african-squash-soup.webp" alt="Jagdish Privé - African Peanut Butter Squash Velouté in Imperial China" loading="lazy">
+              <div class="card-overlay"></div>
+              <span class="card-badge">03 &middot; HIGH PROTOCOL</span>
+            </div>
+            <div class="vertical-content">
+              <h3 class="vertical-title">Jagdish Priv&eacute;</h3>
+              <p class="vertical-subtitle">State Banquets, Industrialist Conclaves &amp; Villa Soir&eacute;es</p>
+              <p class="vertical-body">
+                Discreet, white-glove dining for distinguished industrialist families, state dignitaries, and exclusive residence dinners across Delhi NCR, Mumbai, and Ahmedabad. Crafted with impeccable protocol and precision.
+              </p>
+              <ul class="vertical-features">
+                <li>Strict Dietary Discretion &amp; Security Protocol</li>
+                <li>Artisanal Royal Thali &amp; Multi-Course Menus</li>
+                <li>Traditional Welcomes &amp; White-Glove Butler Service</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4: Banquets & Integrated Services -->
+          <article class="vertical-card">
+            <div class="vertical-image-box">
+              <img src="assets/images/food/optimized/tropical-pineapple-sorbet.webp" alt="Jagdish Banquets - Tropical Sorbet in Carved Miniature Pineapple" loading="lazy">
+              <div class="card-overlay"></div>
+              <span class="card-badge">04 &middot; GRAND ARENAS</span>
+            </div>
+            <div class="vertical-content">
+              <h3 class="vertical-title">Jagdish Banquets</h3>
+              <p class="vertical-subtitle">Integrated F&amp;B for India&rsquo;s Landmark Arenas &amp; Ballrooms</p>
+              <p class="vertical-body">
+                Scalable culinary infrastructure capable of seamlessly catering celebrations from 500 to 10,000+ patrons with synchronized timing, temperature precision, and zero compromise on royal richness and freshness.
+              </p>
+              <ul class="vertical-features">
+                <li>Ultra-Capacity Synchronized Hot-Holding Systems</li>
+                <li>Zero-Waste Food Stewardship Programs</li>
+                <li>Custom Spatial Design &amp; Thematic Food Bazaars</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE CULINARY THEATRES (SIGNATURE LIVE GASTRONOMY) -->
+    <section class="section theatres-section" id="theatres">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="section-tag">LIVE GASTRONOMY</span>
+          <h2 class="section-title">The Culinary Theatres</h2>
+          <p class="section-description">
+            Interactive live cooking pavilions that transform event dining into immersive performing arts. Select a station to preview our signature concepts.
+          </p>
+        </div>
+
+        <!-- Theatres Tab Switcher -->
+        <div class="theatre-tabs" id="theatreTabs">
+          <button class="theatre-tab active" data-tab="awadhi">Royal Dastarkhwan</button>
+          <button class="theatre-tab" data-tab="vedic">Satvik &amp; Pure Jain</button>
+          <button class="theatre-tab" data-tab="mediterranean">Artisanal European</button>
+          <button class="theatre-tab" data-tab="panasian">Pan-Asian Robata</button>
+          <button class="theatre-tab" data-tab="dessert">The Grand Patisserie</button>
+        </div>
+
+        <!-- Theatres Content Containers -->
+        <div class="theatre-panel-wrapper">
+          <!-- Panel 1: Awadhi -->
+          <div class="theatre-panel active" id="tab-awadhi">
+            <div class="theatre-grid">
+              <div class="theatre-media">
+                <img src="assets/images/food/optimized/molecular-biryani.webp" alt="Molecular Infusion Biryani with Culinary Saffron Pipette - Jagdish Caterers" loading="lazy">
+                <div class="theatre-tagline">Signature Dum Pukht basmati cylinder crowned with avocado rosette lattice and molecular flavor pipette</div>
+              </div>
+              <div class="theatre-info">
+                <span class="theatre-number">THEATRE 01</span>
+                <h3 class="theatre-name">The Royal Awadhi &amp; Dum Pukht Dastarkhwan</h3>
+                <p class="theatre-desc">
+                  Echoing the regal kitchens of Lucknow and Hyderabad, this theatre features copper degs sealed with dough and slow-simmered over fragrant wood embers. Master bawarchis carve, garnish, and present dishes on bespoke engraved brass and silver plateware.
+                </p>
+                <div class="dish-showcase">
+                  <div class="dish-item">
+                    <span class="dish-title">Molecular Infusion Dum Pukht Pulao</span>
+                    <span class="dish-detail">Fragrant aged Basmati cylinder, avocado rosette lattice, artisanal flavor pipette</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Gourmet Royal Dahi Bhalla Tartlet</span>
+                    <span class="dish-detail">Crisp tartlet, spiced lentil bhalla, organic sweetened yogurt, roasted almonds &amp; tamarind glaze</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Dal-e-Jagdish Slow Embers</span>
+                    <span class="dish-detail">Simmered for 36 hours over charcoal, finished with white churned butter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Vedic & Satvik -->
+          <div class="theatre-panel" id="tab-vedic">
+            <div class="theatre-grid">
+              <div class="theatre-media">
+                <img src="assets/images/food/optimized/sizzler-ragda-pattice.webp" alt="Imperial Sizzler Ragda Pattice - Satvik Haute Cuisine Jagdish Caterers" loading="lazy">
+                <div class="theatre-tagline">Golden pan-crisped potato pattice sizzling on royal gold-rimmed china with spiced white peas ragda</div>
+              </div>
+              <div class="theatre-info">
+                <span class="theatre-number">THEATRE 02</span>
+                <h3 class="theatre-name">Modern Satvik &amp; Pure Jain Gastronomy</h3>
+                <p class="theatre-desc">
+                  Crafted for the most discerning palates with strict adherence to traditional Jain and Vaishnav codes. We prove that satvik gastronomy can rival any Michelin table in aesthetic beauty, aromatic complexity, and celebratory grandeur.
+                </p>
+                <div class="dish-showcase">
+                  <div class="dish-item">
+                    <span class="dish-title">Imperial Sizzler Ragda Pattice</span>
+                    <span class="dish-detail">Pan-crisped golden potato pattice, sizzling cast iron, spiced white peas ragda &amp; tamarind nectar</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">African Peanut Butter Squash Velouté</span>
+                    <span class="dish-detail">Roasted butternut squash with African peanut butter &amp; cold-pressed chili oil in fine gold china</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Anjeer &amp; Khoya Kofta in Saffron Cream</span>
+                    <span class="dish-detail">Stuffed with wild figs and roasted pistachios in a pure cow ghee reduction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Mediterranean -->
+          <div class="theatre-panel" id="tab-mediterranean">
+            <div class="theatre-grid">
+              <div class="theatre-media">
+                <img src="assets/images/food/optimized/italian-pav-bhaji-cones.webp" alt="Italian Pav Bhaji Cones on Handcrafted Tiered Display - Jagdish Caterers" loading="lazy">
+                <div class="theatre-tagline">Crisp savory waffle cones filled with spiced Italian pav bhaji on artisanal elephant-carved acrylic tier</div>
+              </div>
+              <div class="theatre-info">
+                <span class="theatre-number">THEATRE 03</span>
+                <h3 class="theatre-name">Artisanal Mediterranean &amp; Modern Fusion Graze</h3>
+                <p class="theatre-desc">
+                  An Italian piazza brought to life with bold global interpretations. Chefs orchestrate dramatic presentations combining European pastry geometry with rich artisanal Indian seasonings.
+                </p>
+                <div class="dish-showcase">
+                  <div class="dish-item">
+                    <span class="dish-title">Italian Pav Bhaji Cones</span>
+                    <span class="dish-detail">Herb waffle cones filled with spiced Italian pav bhaji, micro-greens, tiered acrylic stand</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Blue Pea Reman Infusion Clear Broth</span>
+                    <span class="dish-detail">Natural butterfly pea flower cobalt broth in stemware with artisanal grissini &amp; dip trio</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Parmigiano Reggiano Live Wheel Risotto</span>
+                    <span class="dish-detail">Acquerello Carnaroli rice, black winter truffle shaved table-side</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4: Pan Asian -->
+          <div class="theatre-panel" id="tab-panasian">
+            <div class="theatre-grid">
+              <div class="theatre-media">
+                <img src="assets/images/food/optimized/satay-stick-kebab.webp" alt="Satay Stick Kebab in Shot Glass Presentation - Jagdish Caterers" loading="lazy">
+                <div class="theatre-tagline">Tandoori glazed satay skewers upright in cocktail shot glasses framed inside ornate antique silver repoussé</div>
+              </div>
+              <div class="theatre-info">
+                <span class="theatre-number">THEATRE 04</span>
+                <h3 class="theatre-name">Pan-Asian Robata Grill &amp; Cocktail Skewers</h3>
+                <p class="theatre-desc">
+                  Vibrant, theatrical wok fire and Japanese binchotan charcoal grills. Guests witness skewers roasted to perfection and served in high-fashion cocktail glassware with bespoke dipping reductions.
+                </p>
+                <div class="dish-showcase">
+                  <div class="dish-item">
+                    <span class="dish-title">Satay Stick Kebab in Shot Glass</span>
+                    <span class="dish-detail">Charred artisanal satay skewers served upright in shot glasses with rich spiced dipping emulsion</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Crystal Edamame &amp; Truffle Dumplings</span>
+                    <span class="dish-detail">Translucent rice wrapper, Japanese edamame puree, shaved black summer truffle</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Robata Glazed Asparagus &amp; Tofu Skewers</span>
+                    <span class="dish-detail">Smoked over white oak charcoal with tare glaze and toasted white sesame</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 5: Grand Patisserie -->
+          <div class="theatre-panel" id="tab-dessert">
+            <div class="theatre-grid">
+              <div class="theatre-media">
+                <img src="assets/images/food/optimized/turkish-jamun-sorbet.webp" alt="Turkish Jamun Sorbet in Handcrafted Shell - Jagdish Caterers" loading="lazy">
+                <div class="theatre-tagline">Handcrafted dark chocolate shell filled with Turkish jamun sorbet, edible silver, almonds &amp; fresh rose petals</div>
+              </div>
+              <div class="theatre-info">
+                <span class="theatre-number">THEATRE 05</span>
+                <h3 class="theatre-name">The Grand Dessert Studio &amp; Molecular Confectionery</h3>
+                <p class="theatre-desc">
+                  The crescendo of every Jagdish banquet. An awe-inspiring sanctuary of sweetness where French pastry craftsmanship meets regal Indian mithai, finished with cold nitrogen mist and real silver leaves.
+                </p>
+                <div class="dish-showcase">
+                  <div class="dish-item">
+                    <span class="dish-title">Turkish Jamun Sorbet in Handcrafted Shell</span>
+                    <span class="dish-detail">Dark chocolate sphere filled with velvet Turkish jamun sorbet, silver leaf, and rose petals</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Blue Lavender Delight in Terracotta Shikoras</span>
+                    <span class="dish-detail">Indigo-tinted royal confection in artisanal boat shikoras with almond florets &amp; pistachio</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">Apple Bonanza in Whole Carved Apple Shell</span>
+                    <span class="dish-detail">Whole carved Fuji apple hollowed and filled with saffron-pistachio rabdi and spiced compote</span>
+                  </div>
+                  <div class="dish-item">
+                    <span class="dish-title">World Vision Tropical Pineapple Sorbet</span>
+                    <span class="dish-detail">Carved miniature pineapple with tropical fruit sorbet, parasol and fresh roses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE ATELIER (OUR 4-STEP CURATORIAL JOURNEY) -->
+    <section class="section atelier-section" id="atelier">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="section-tag">THE ART OF CURATION</span>
+          <h2 class="section-title">The Four-Stage Atelier</h2>
+          <p class="section-description">
+            From initial palate architecture to event-night execution, every celebration is orchestrated with bespoke military precision.
+          </p>
+        </div>
+
+        <div class="timeline-steps">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Palate Mapping</h3>
+            <p class="step-text">
+              We interview the hosts to decipher family traditions, regional tastes, nostalgic favorites, and dietary preferences of your honored guests.
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3 class="step-title">The Tasting Studio</h3>
+            <p class="step-text">
+              A private tasting banquet in our executive chef studio, paired with bespoke silver cloches, linen selections, and custom menu calligraphy.
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Cold-Chain Logistics</h3>
+            <p class="step-text">
+              Precision procurement of heirloom spices, farm-fresh botanicals, and artisanal cheeses under unbroken temperature-controlled transport.
+            </p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h3 class="step-title">The Event Symphony</h3>
+            <p class="step-text">
+              Uniformed brigade of 50 to 500 culinary artisans, floor captains, and sommeliers executing flawless synchronized service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: VISUAL ANTHOLOGY (FILTERABLE EDITORIAL GALLERY WITH LIGHTBOX) -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="gallery-header-flex">
+          <div>
+            <span class="section-tag">VISUAL ANTHOLOGY</span>
+            <h2 class="section-title">A Feast for Discerning Eyes</h2>
+          </div>
+          <!-- Gallery Filters -->
+          <div class="gallery-filters" id="galleryFilters">
+            <button class="filter-btn active" data-filter="all">All Chronicles</button>
+            <button class="filter-btn" data-filter="banquets">Banquets</button>
+            <button class="filter-btn" data-filter="plating">Haute Plating</button>
+            <button class="filter-btn" data-filter="theatres">Live Theatres</button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Item 1: Turkish Jamun Sorbet -->
+          <div class="gallery-card" data-category="plating" data-caption="Turkish Jamun Sorbet in Handcrafted Chocolate Shell with Rose Petals &amp; Slivered Almonds">
+            <img src="assets/images/food/optimized/turkish-jamun-sorbet.webp" alt="Turkish Jamun Sorbet in Handcrafted Shell - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Turkish Jamun Sorbet &middot; Artisanal Cacao Shell</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Italian Pav Bhaji Cones -->
+          <div class="gallery-card" data-category="theatres" data-caption="Italian Pav Bhaji Cones on Tiered Acrylic Stand with Handcrafted Wooden Elephant">
+            <img src="assets/images/food/optimized/italian-pav-bhaji-cones.webp" alt="Italian Pav Bhaji Cones on Tiered Stand - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Italian Pav Bhaji Cones &middot; Modern Fusion</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Molecular Infusion Biryani -->
+          <div class="gallery-card" data-category="theatres" data-caption="Molecular Infusion Dum Pukht Biryani with Culinary Saffron Flavor Pipette">
+            <img src="assets/images/food/optimized/molecular-biryani.webp" alt="Molecular Infusion Biryani with Flavor Pipette - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Molecular Dum Pukht Biryani &middot; Saffron Pipette</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Blue Lavender Delight -->
+          <div class="gallery-card" data-category="plating" data-caption="Blue Lavender Delight in Traditional Terracotta Boat Shikoras with Almond Florets">
+            <img src="assets/images/food/optimized/blue-lavender-delight.webp" alt="Blue Lavender Delight in Terracotta Shikoras - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Blue Lavender Delight &middot; Terracotta Shikoras</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Satay Stick Kebab -->
+          <div class="gallery-card" data-category="theatres" data-caption="Satay Stick Kebab in Shot Glass with Spiced Emulsion inside Ornate Silver Repoussé Vitrine">
+            <img src="assets/images/food/optimized/satay-stick-kebab.webp" alt="Satay Stick Kebab in Shot Glass Presentation - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Satay Stick Kebab &middot; Silver Vitrine Service</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Imperial Sizzler Ragda Pattice -->
+          <div class="gallery-card" data-category="banquets" data-caption="Imperial Sizzler Ragda Pattice Served Sizzling on Royal Gold-Rimmed China">
+            <img src="assets/images/food/optimized/sizzler-ragda-pattice.webp" alt="Imperial Sizzler Ragda Pattice - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Imperial Sizzler Ragda Pattice &middot; Gold China</p>
+            </div>
+          </div>
+
+          <!-- Item 7: Blue Pea Reman Broth -->
+          <div class="gallery-card" data-category="plating" data-caption="Blue Pea Reman Infusion Clear Broth in Stemware with Artisanal Grissini &amp; Dips">
+            <img src="assets/images/food/optimized/blue-pea-soup.webp" alt="Blue Pea Reman Infusion Clear Broth - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Blue Pea Reman Broth &middot; Floral Infusion</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Gourmet Royal Chaat Tartlet -->
+          <div class="gallery-card" data-category="banquets" data-caption="Gourmet Royal Dahi Bhalla Tartlet with Roasted Whole Almonds &amp; Mint Nectar Glaze">
+            <img src="assets/images/food/optimized/royal-chaat-tartlet.webp" alt="Gourmet Royal Dahi Bhalla Tartlet - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Royal Shahi Chaat Tartlet &middot; Whole Almonds</p>
+            </div>
+          </div>
+
+          <!-- Item 9: African Squash Velouté -->
+          <div class="gallery-card" data-category="plating" data-caption="African Peanut Butter Butternut Squash Velouté with Chili Oil Drizzle in Imperial Gold China">
+            <img src="assets/images/food/optimized/african-squash-soup.webp" alt="African Peanut Butter Squash Velouté - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">African Peanut Butter Squash &middot; Haute Velouté</p>
+            </div>
+          </div>
+
+          <!-- Item 10: Apple Bonanza -->
+          <div class="gallery-card" data-category="plating" data-caption="Apple Bonanza in Whole Carved Fuji Apple Shell with Saffron Pistachio Rabdi">
+            <img src="assets/images/food/optimized/apple-bonanza.webp" alt="Apple Bonanza in Whole Carved Apple Shell - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Apple Bonanza &middot; Whole Carved Apple</p>
+            </div>
+          </div>
+
+          <!-- Item 11: Tropical Pineapple Sorbet -->
+          <div class="gallery-card" data-category="theatres" data-caption="World Vision Tropical Sorbet in Miniature Carved Pineapple with Fresh Roses">
+            <img src="assets/images/food/optimized/tropical-pineapple-sorbet.webp" alt="Tropical Sorbet in Carved Pineapple - Jagdish Caterers" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Tropical Sorbet &middot; Carved Pineapple</p>
+            </div>
+          </div>
+
+          <!-- Item 12: Grand Banquet Tablescape -->
+          <div class="gallery-card" data-category="banquets" data-caption="Royal Nuptial Banquet Tablescape with Candelabras &amp; Kansa Table Settings at City Palace, Udaipur">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Royal Nuptial Banquet Tablescape" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">&#x26F6;</span>
+              <p class="gallery-caption">Royal Nuptial Banquet &middot; Udaipur Palace</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- SECTION 6: PATRON VIDEO TESTIMONIALS & MEDIA ACCLAIM -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="section-tag">PATRONS &amp; ACCLAIM</span>
+          <h2 class="section-title">Words of Regal Patronage</h2>
+          <p class="section-lead-muted">Watch authentic reflections from hosts and patrons of India's most celebrated palace nuptials and grand conclaves.</p>
+        </div>
+
+        <div class="testimonials-grid video-testimonials-grid" id="testimonialsGrid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card video-card" data-video="assets/videos/testimonial_1.mp4" data-author="The Singhania Family" data-detail="Destination Wedding · City Palace, Udaipur" data-tag="Royal Nuptials" data-quote="Jagdish Caterers orchestrated a 3-day royal nuptial feast for 1,800 guests at City Palace with breathtaking finesse. Every single dish, from the Awadhi biryanis to the live chaat counters, tasted as if it were prepared in an intimate royal kitchen.">
+            <div class="video-card-thumb">
+              <img src="assets/images/testimonial_1_poster.jpg" alt="The Singhania Family Wedding Testimonial" class="testimonial-thumb-img">
+              <div class="thumb-overlay"></div>
+              <button class="card-play-btn" aria-label="Play Singhania Family Video Testimonial">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </button>
+              <span class="video-duration-pill">0:18</span>
+              <span class="video-tag-pill">Royal Nuptials</span>
+            </div>
+            <div class="video-card-body">
+              <div class="star-rating">★★★★★</div>
+              <p class="quote-text">
+                &ldquo;Jagdish Caterers orchestrated a 3-day royal nuptial feast for 1,800 guests at City Palace with breathtaking finesse. Every dish was culinary poetry.&rdquo;
+              </p>
+              <cite class="quote-author">
+                <span class="author-name">The Singhania Family</span>
+                <span class="author-detail">Destination Wedding &middot; City Palace, Udaipur</span>
+              </cite>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card video-card" data-video="assets/videos/testimonial_2.mp4" data-author="The Goenka Family" data-detail="Grand Nuptials · Rambagh Palace, Jaipur" data-tag="Culinary Theatre" data-quote="Synchronized hot silver service for 2,500 guests, authentic Marwari royal delicacies, and live stage theatricals were executed with absolute royal perfection.">
+            <div class="video-card-thumb">
+              <img src="assets/images/testimonial_2_poster.jpg" alt="The Goenka Family Testimonial" class="testimonial-thumb-img">
+              <div class="thumb-overlay"></div>
+              <button class="card-play-btn" aria-label="Play Goenka Family Video Testimonial">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </button>
+              <span class="video-duration-pill">0:16</span>
+              <span class="video-tag-pill">Culinary Theatre</span>
+            </div>
+            <div class="video-card-body">
+              <div class="star-rating">★★★★★</div>
+              <p class="quote-text">
+                &ldquo;Synchronized hot service, authentic Marwari delicacies, and live stage theatricals were executed with absolute royal perfection.&rdquo;
+              </p>
+              <cite class="quote-author">
+                <span class="author-name">The Goenka Family</span>
+                <span class="author-detail">Grand Nuptials &middot; Rambagh Palace, Jaipur</span>
+              </cite>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card video-card" data-video="assets/videos/testimonial_3.mp4" data-author="The Mehta Family" data-detail="Grand Conclave Gala · Mumbai" data-tag="Grand Banquets" data-quote="Their Satvik and Pure Jain curations are without peer in India. They elevate traditional culinary principles into true royal haute gastronomy without compromising sacred codes.">
+            <div class="video-card-thumb">
+              <img src="assets/images/testimonial_3_poster.jpg" alt="The Mehta Family Testimonial" class="testimonial-thumb-img">
+              <div class="thumb-overlay"></div>
+              <button class="card-play-btn" aria-label="Play Mehta Family Video Testimonial">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </button>
+              <span class="video-duration-pill">0:14</span>
+              <span class="video-tag-pill">Grand Banquets</span>
+            </div>
+            <div class="video-card-body">
+              <div class="star-rating">★★★★★</div>
+              <p class="quote-text">
+                &ldquo;Their Satvik and Pure Jain curations are without peer in India. They elevate traditional culinary principles into true royal haute gastronomy.&rdquo;
+              </p>
+              <cite class="quote-author">
+                <span class="author-name">The Mehta Family</span>
+                <span class="author-detail">Grand Conclave Gala &middot; Mumbai</span>
+              </cite>
+            </div>
+          </article>
+        </div>
+
+        <!-- Press Strip -->
+        <div class="press-strip">
+          <span class="press-label">AS ACCLAIMED BY</span>
+          <div class="press-logos">
+            <span>VOGUE WEDDINGS</span>
+            <span>HARPER&rsquo;S BAZAAR BRIDE</span>
+            <span>ARCHITECTURAL DIGEST</span>
+            <span>CONDE NAST TRAVELLER INDIA</span>
+            <span>THE ECONOMIC TIMES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO TESTIMONIAL LIGHTBOX MODAL -->
+    <div class="video-player-modal" id="videoPlayerModal" role="dialog" aria-hidden="true">
+      <div class="video-player-backdrop" id="videoPlayerBackdrop"></div>
+      <div class="video-player-dialog">
+        <button class="video-player-close" id="closeVideoPlayerBtn" aria-label="Close Video">&times;</button>
+        <div class="video-player-frame">
+          <video id="testimonialActiveVideo" class="testimonial-active-video" controls playsinline preload="auto">
+            <source src="" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-player-meta">
+          <span class="video-player-badge" id="videoPlayerBadge">Royal Nuptials</span>
+          <h3 class="video-player-title" id="videoPlayerTitle">The Singhania Family</h3>
+          <p class="video-player-detail" id="videoPlayerDetail">Destination Wedding · City Palace, Udaipur</p>
+          <p class="video-player-quote" id="videoPlayerQuote"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7: BESPOKE CONCIERGE & EVENT PLANNER -->
+    <section class="section concierge-section" id="concierge">
+      <div class="container">
+        <div class="concierge-wrapper">
+          <div class="concierge-header">
+            <span class="section-tag">PRIVATE CONSULTATION</span>
+            <h2 class="section-title">Commission Your Celebration</h2>
+            <p class="body-lead">
+              Every bespoke event begins with a personal conversation. Tell us about your vision, and our senior culinary director will contact you within 24 hours.
+            </p>
+          </div>
+
+          <form class="planner-form" id="plannerForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Maharani Gayatri Devi / Mr. Aditya Birla" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="e.g. celebrations@familyoffice.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone / WhatsApp Number</label>
+                <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g. +91 98256 27698" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eventType">Nature of Celebration</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="">Select Event Type</option>
+                  <option value="Destination Royal Palace Wedding">Destination Royal Palace Wedding (Multi-Day)</option>
+                  <option value="Grand Nuptials & Reception">Grand Nuptials &amp; Reception</option>
+                  <option value="Privé State / Corporate Conclave">Priv&eacute; State / Corporate Conclave</option>
+                  <option value="Intimate Estate Feast">Intimate Estate Feast / Farmhouse Soir&eacute;e</option>
+                  <option value="Milestone Jubilee Banquet">Milestone Jubilee Banquet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="destinationLocation">Destination / City in India</label>
+                <input type="text" id="destinationLocation" name="destinationLocation" placeholder="e.g. Udaipur, Jaipur, Jodhpur, Mumbai, Delhi NCR, Goa, Ahmedabad" required>
+              </div>
+
+              <div class="form-group">
+                <label for="guestSlider">Anticipated Guest Count: <strong id="guestDisplay" class="guest-counter-highlight">500 Guests</strong></label>
+                <input type="range" id="guestSlider" name="guestSlider" min="50" max="5000" step="50" value="500">
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label>Gastronomic Desires &amp; Culinary Themes (Select all of interest)</label>
+              <div class="checkbox-pill-grid">
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Royal Awadhi & Mughlai" checked>
+                  <span>Royal Awadhi &amp; Mughlai Dastarkhwan</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Satvik & Pure Jain Fine Dining">
+                  <span>Satvik &amp; Pure Jain Haute Cuisine</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Artisanal Marwari & Gujarati Heritage">
+                  <span>Royal Marwari &amp; Gujarati Heritage</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Artisanal Mediterranean & Italian">
+                  <span>Artisanal Italian &amp; Mediterranean</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Pan-Asian Robata & Dim Sum">
+                  <span>Pan-Asian Robata &amp; Dim Sum</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Grand Indian Dessert Studio">
+                  <span>Grand Indian Dessert &amp; Molecular Studio</span>
+                </label>
+                <label class="pill-checkbox">
+                  <input type="checkbox" name="cuisine" value="Old Delhi & Banaras Street Food Bazaars">
+                  <span>Live Indian Street Food Bazaars</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="specialNotes">Special Inquiries or Venue Requirements</label>
+              <textarea id="specialNotes" name="specialNotes" rows="3" placeholder="Please mention preferred event dates, venue names (e.g. Taj Lake Palace, Rambagh Palace, Grand Hyatt), specific regional dietary traditions, or custom tasting requirements."></textarea>
+            </div>
+
+            <div class="form-actions-bar">
+              <button type="submit" class="btn-submit" id="submitBtn">Request Private Consultation</button>
+              <button type="button" class="btn-whatsapp-outline" id="whatsappDirectBtn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.204 8.204 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.05-1.07l-.29-.17-3.12.82.83-3.04-.19-.3a8.216 8.216 0 0 1-1.25-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+                </svg>
+                <span>Direct WhatsApp VIP Line</span>
+              </button>
+            </div>
+            <div id="formStatusMsg" class="form-status-msg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="luxury-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="Jagdish Caterers Home">
+            <img src="assets/images/logo-light.png" alt="Jagdish Caterers" class="brand-logo-img footer-logo-img">
+          </a>
+          <p class="footer-tagline">
+            Pioneering authentic royal Indian gastronomy and white-glove hospitality for palace weddings, grand nuptials, and heritage celebrations across India.
+          </p>
+          <div class="certifications-row">
+            <span class="cert-pill">FSSAI Certified</span>
+            <span class="cert-pill">ISO 22000 Certified</span>
+            <span class="cert-pill">HACCP Gold Standard</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Verticals</h4>
+          <ul class="footer-menu">
+            <li><a href="#verticals">Jagdish Luxe Weddings</a></li>
+            <li><a href="#verticals">Jagdish Palaces &amp; Destinations</a></li>
+            <li><a href="#verticals">Jagdish Priv&eacute; Conclaves</a></li>
+            <li><a href="#verticals">Jagdish Arenas &amp; Ballrooms</a></li>
+            <li><a href="#theatres">Culinary Theatres</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Pan-India Kitchens</h4>
+          <ul class="footer-menu">
+            <li><strong>Mumbai:</strong> Nariman Point &middot; BKC Atelier</li>
+            <li><strong>New Delhi &amp; NCR:</strong> Lutyens &middot; Aerocity</li>
+            <li><strong>Ahmedabad:</strong> S.G. Highway Central Commissary</li>
+            <li><strong>Rajasthan:</strong> Udaipur &middot; Sukhadia Circle</li>
+            <li><strong>Bengaluru:</strong> Palace Road</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Direct Concierge</h4>
+          <p class="footer-contact-line"><strong>VIP Concierge / Nuptials:</strong> +91 98256 27698</p>
+          <p class="footer-contact-line"><strong>General Inquiries / Events:</strong> +91 92652 08807</p>
+          <p class="footer-contact-line"><strong>Private Office:</strong> concierge@jagdishcaterers.com</p>
+          <p class="footer-contact-line"><strong>Pan-India Bookings:</strong> bookings@jagdishcaterers.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Jagdish Caterers India Private Limited. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Sanitation &amp; Hygiene Standards</a>
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Commission</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
