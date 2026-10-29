@@ -310,7 +310,7 @@ _Requesting availability and private chef tasting consultation._`;
   if (whatsappDirectBtn) {
     whatsappDirectBtn.addEventListener('click', () => {
       const encodedMsg = buildWhatsAppMessage();
-      window.open(`https://wa.me/919825627698?text=${encodedMsg}`, '_blank');
+      window.open(`https://wa.me/919265208807?text=${encodedMsg}`, '_blank');
     });
   }
 
@@ -334,7 +334,7 @@ _Requesting availability and private chef tasting consultation._`;
       setTimeout(() => {
         if (confirm("Would you like to open this enquiry directly in WhatsApp with our VIP Concierge?")) {
           const encodedMsg = buildWhatsAppMessage();
-          window.open(`https://wa.me/919825627698?text=${encodedMsg}`, '_blank');
+          window.open(`https://wa.me/919265208807?text=${encodedMsg}`, '_blank');
         }
       }, 700);
     });
@@ -409,6 +409,17 @@ _Requesting availability and private chef tasting consultation._`;
     if (e.key === 'Escape') {
       if (videoPlayerModal?.classList.contains('active')) closeVideoTestimonial();
     }
+  });
+
+  // Experience card consultation presets
+  document.querySelectorAll('[data-event-preset]').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const preset = trigger.getAttribute('data-event-preset');
+      const select = document.getElementById('eventType');
+      if (select && preset) {
+        select.value = preset;
+      }
+    });
   });
 
   // Current year in footer
