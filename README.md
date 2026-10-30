@@ -6,7 +6,7 @@ A luxury hospitality web portal showcasing Jagdish Caterers' regal culinary lega
 
 ## Features
 
-- **Cinematic Video Hero**: Multi-reel drone aerials and banquet cinematography with interactive reel selection.
+- **Cinematic Video Hero**: Grand Celebrations drone aerials and banquet cinematography in seamless full-width luxury loop.
 - **The House & Legacy**: Over three decades of royal culinary heritage, pedigree statistics, and heirloom court recipes.
 - **Signature Verticals**: Luxe Weddings, Pan-India Destinations, Privé Conclaves, and Grand Arenas.
 - **Interactive Culinary Theatres**: Dynamic live gastronomy pavilions (Royal Dastarkhwan, Satvik & Pure Jain, Artisanal European, Pan-Asian Robata, Grand Patisserie).

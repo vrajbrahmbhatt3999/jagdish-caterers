@@ -96,44 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
       console.warn("Ambient audio setup:", e);
     }
 
-    // Reel switching logic
-    const switchReel = (btn, videoSrc) => {
-      if (!btn || !videoSrc) return;
-      document.querySelectorAll('.reel-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      heroVideo.style.opacity = '0.35';
-
-      setTimeout(() => {
-        heroVideo.src = videoSrc;
-        heroVideo.load();
-        heroVideo.muted = !isSoundActive;
-        heroVideo.volume = 0.85;
-
-        const onReady = () => {
-          heroVideo.style.opacity = '1';
-          heroVideo.removeEventListener('canplay', onReady);
-        };
-        heroVideo.addEventListener('canplay', onReady);
-
-        heroVideo.play().then(() => {
-          heroVideo.muted = !isSoundActive;
-          heroVideo.volume = 0.85;
-          if (isSoundActive && ambientAudio && ambientAudio.paused) {
-            ambientAudio.play().catch(() => {});
-          }
-        }).catch(err => {
-          console.warn("Video playback requires interaction:", err);
-          heroVideo.style.opacity = '1';
-        });
-      }, 150);
-    };
-
-    const reelBtns = document.querySelectorAll('.reel-btn');
-    reelBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        switchReel(btn, btn.getAttribute('data-src'));
-      });
+    // Ensure seamless looping for Grand Celebrations banner video
+    heroVideo.addEventListener('ended', () => {
+      heroVideo.currentTime = 0;
+      heroVideo.play().catch(() => {});
     });
 
     // Play / Pause toggle
@@ -282,27 +248,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buildWhatsAppMessage = () => {
     const fullName = document.getElementById('fullName')?.value || 'Guest';
-    const eventType = document.getElementById('eventType')?.value || 'Bespoke Celebration';
-    const destination = document.getElementById('destinationLocation')?.value || 'Destination TBD';
+    const eventType = document.getElementById('eventType')?.value || 'Wedding Celebration';
+    const destination = document.getElementById('destinationLocation')?.value || 'City TBD';
     const guests = guestSlider ? guestSlider.value : '500';
     
     const checkedCuisines = [];
     document.querySelectorAll('input[name="cuisine"]:checked').forEach(c => {
       checkedCuisines.push(c.value);
     });
-    const cuisinesText = checkedCuisines.length > 0 ? checkedCuisines.join(', ') : 'Custom Haute Cuisine';
+    const cuisinesText = checkedCuisines.length > 0 ? checkedCuisines.join(', ') : 'Custom Wedding Menu';
     const notes = document.getElementById('specialNotes')?.value || 'No additional notes provided.';
 
-    const message = `*JAGDISH CATERERS · ROYAL INDIAN HOSPITALITY*
+    const message = `*JAGDISH CATERERS · WEDDING CATERING ENQUIRY*
 ━━━━━━━━━━━━━━━━━━━━
-*Host / Patron:* ${fullName}
+*Client / Family Name:* ${fullName}
 *Event Type:* ${eventType}
-*Destination / City (India):* ${destination}
-*Anticipated Guests:* ${guests} Guests
-*Culinary Themes:* ${cuisinesText}
-*Special Inquiries:* ${notes}
+*Event City / Location:* ${destination}
+*Expected Guests:* ${guests} Guests
+*Preferred Cuisines & Counters:* ${cuisinesText}
+*Special Food Notes:* ${notes}
 ━━━━━━━━━━━━━━━━━━━━
-_Requesting availability and private chef tasting consultation._`;
+_Requesting menu options, quotation, and food tasting schedule._`;
 
     return encodeURIComponent(message);
   };
@@ -324,7 +290,7 @@ _Requesting availability and private chef tasting consultation._`;
       if (formStatusMsg) {
         formStatusMsg.className = 'form-status-msg success';
         formStatusMsg.innerHTML = `
-          <strong>Thank you, ${fullName}.</strong> Your bespoke event brief has been commissioned. Our Senior Culinary Director will contact you at <em>${email}</em> within 24 hours to schedule your private tasting session.
+          <strong>Thank you, ${fullName}!</strong> We have received your catering inquiry. Our team will contact you at <em>${email}</em> within 24 hours to discuss your customized menu and schedule a food tasting session.
         `;
         formStatusMsg.style.display = 'block';
         formStatusMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -332,7 +298,7 @@ _Requesting availability and private chef tasting consultation._`;
 
       // Optionally offer WhatsApp direct handover
       setTimeout(() => {
-        if (confirm("Would you like to open this enquiry directly in WhatsApp with our VIP Concierge?")) {
+        if (confirm("Would you like to connect directly on WhatsApp with our catering team?")) {
           const encodedMsg = buildWhatsAppMessage();
           window.open(`https://wa.me/919265208807?text=${encodedMsg}`, '_blank');
         }
@@ -357,7 +323,7 @@ _Requesting availability and private chef tasting consultation._`;
     const author = card.getAttribute('data-author') || 'Patron Testimonial';
     const detail = card.getAttribute('data-detail') || 'Jagdish Caterers Celebration';
     const quote = card.getAttribute('data-quote') || '';
-    const tag = card.getAttribute('data-tag') || 'Royal Nuptials';
+    const tag = card.getAttribute('data-tag') || 'Wedding Catering';
 
     if (videoPlayerTitle) videoPlayerTitle.textContent = author;
     if (videoPlayerDetail) videoPlayerDetail.textContent = detail;
@@ -426,5 +392,36 @@ _Requesting availability and private chef tasting consultation._`;
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+
+  // 11. ULTRA-FAST IMAGE PRE-WARMER (Instantly preloads all food & gallery photos into browser RAM)
+  const priorityImageUrls = [
+    'assets/images/food/optimized/molecular-biryani.webp',
+    'assets/images/food/optimized/italian-pav-bhaji-cones.webp',
+    'assets/images/food/optimized/sizzler-ragda-pattice.webp',
+    'assets/images/food/optimized/satay-stick-kebab.webp',
+    'assets/images/food/optimized/turkish-jamun-sorbet.webp',
+    'assets/images/food/optimized/african-squash-soup.webp',
+    'assets/images/food/optimized/royal-chaat-tartlet.webp',
+    'assets/images/food/optimized/blue-pea-soup.webp',
+    'assets/images/food/optimized/apple-bonanza.webp',
+    'assets/images/food/optimized/tropical-pineapple-sorbet.webp',
+    'assets/images/food/optimized/blue-lavender-delight.webp',
+    'assets/images/testimonial_1_poster.webp',
+    'assets/images/testimonial_2_poster.webp',
+    'assets/images/testimonial_3_poster.webp'
+  ];
+
+  const prewarmImages = () => {
+    priorityImageUrls.forEach(url => {
+      const img = new Image();
+      img.src = url;
+    });
+  };
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(prewarmImages, { timeout: 1200 });
+  } else {
+    setTimeout(prewarmImages, 150);
   }
 });
